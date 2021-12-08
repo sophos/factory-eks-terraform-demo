@@ -24,15 +24,10 @@ module "eks" {
   map_accounts     = var.eks_map_accounts
   worker_groups = [
     {
-      name                          = "worker-group-2"
+      name                          = "worker-group-1"
       instance_type                 = "t2.xlarge"
       asg_desired_capacity          = 3
       additional_security_group_ids = []
     }
   ]
-  workers_additional_policies = ["arn:aws:iam::aws:policy/CloudWatchAgentServerPolicy"]
-
-  # enable control plane logging to cw logs
-  cluster_enabled_log_types     = ["api", "audit", "authenticator", "controllerManager", "scheduler"]
-  cluster_log_retention_in_days = 90
 }

@@ -1,6 +1,8 @@
 terraform {
-  backend "local" {
-    path = "terraform.tfstate"
+  backend "s3" {
+    bucket         = "refactr-demo-terraform-state"
+    region         = "us-west-2"
+    key            = "big-bang-demo/terraform.tfstate"
   }
   required_providers {
     aws = {
