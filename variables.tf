@@ -19,6 +19,11 @@ variable "name_prefix" {
   type        = string
 }
 
+variable "cluster_version" {
+  description = "The version of the cluster"
+  type        = string
+}
+
 
 ############### VPC ###############
 variable "vpc_azs" {
