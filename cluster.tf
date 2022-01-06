@@ -10,8 +10,9 @@ data "aws_eks_cluster_auth" "myEksClusterAuth" {
 
 # https://registry.terraform.io/modules/terraform-aws-modules/eks/aws/latest
 module "eks" {
-  create_eks       = true
   source           = "terraform-aws-modules/eks/aws"
+  version          = "17.24.0"
+  create_eks       = true
   cluster_name     = local.cluster_name
   cluster_version  = var.cluster_version
   subnets          = module.vpc.private_subnets
