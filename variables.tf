@@ -10,17 +10,17 @@ variable "aws_account_id" {
 }
 
 variable "env" {
-  description = "Environment (will be included in tags)"
+  description = "Environment (will be included in tags and cluster name)"
   type        = string
 }
 
 variable "name_prefix" {
-  description = "The name prefix for all resources"
+  description = "Name prefix for all AWS resources"
   type        = string
 }
 
 variable "cluster_version" {
-  description = "The version of the cluster"
+  description = "The version of the EKS cluster"
   type        = string
 }
 

@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
-    bucket         = "refactr-demo-terraform-state"
+    bucket         = "terraform-state-bravo"
     region         = "us-west-2"
-    key            = "big-bang-demo/terraform.tfstate"
+    key            = "eks-cluster/terraform.tfstate"
   }
   required_providers {
     aws = {
