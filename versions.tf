@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
-    bucket         = "terraform-state-bravo"
-    region         = "us-west-2"
-    key            = "eks-cluster/terraform.tfstate"
+    bucket         = "sophos-factory-demo-tfstate"
+    region         = "us-east-1"
+    key            = "eks-terraform-demo/terraform.tfstate"
   }
   required_providers {
     aws = {
