@@ -17,10 +17,11 @@ This repo contains files in support of an integration between the Sophos Factory
     * Assign the user the appropriate permissions to deploy the Terraform configuration in this repo
 * In Sophos Factory
     * Create a new Job using the following settings:
-        * Pipeline: * **Launch EKS Cluster**
+        * Pipeline: * **EKS Cluster**
         * Revision: **latest**
 * Run the job
 
 ## Resources
 * [Sophos Factory Community Edition](https://www.refactr.it/community-edition)
 * [Create AWS Account](https://aws.amazon.com/resources/create-account/)
+* [Sophos Factory | EKS Cluster Pipeline](https://app.refactr.it/catalogs/604001f7ea74f973a3bf5ac6/pipelines/61d61da2a44477af4cd6be87)
