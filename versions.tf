@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
-    bucket         = "sophos-factory-demo-tfstate"
-    region         = "us-west-2"
-    key            = "eks-terraform-demo/terraform.tfstate"
+    bucket         = "replace-me-bucket"
+    region         = "replace-me-region"
+    key            = "replace-me-key"
   }
   required_providers {
     aws = {
